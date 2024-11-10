@@ -1,3 +1,0 @@
-101,Alice,alice@example.com,2
-102,Bob,bob@example.com
-103,Charlie,charlie@example.com,3,4
