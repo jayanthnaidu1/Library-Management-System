@@ -1,6 +1,0 @@
-1,Java Programming,Author A,Education,false
-2,Python Basics,Author B,Education,true
-3,Data Structures,Author C,Computer Science,true
-201,oop,james,programming,true
-4,Design Patterns,Author D,Software Engineering,true
-7,java,jay,education,true
