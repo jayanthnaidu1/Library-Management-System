@@ -10,7 +10,7 @@ public class Member
     private String email;
     private List<Book> borrowedBooks;
 
-    public Member(String memberId, String name, String email) // constractor
+    public Member(String memberId, String name, String email) // constructor
     {
         this.memberId = memberId;
         this.name = name;
