@@ -8,7 +8,8 @@ public class Book {
     private boolean isAvailable;
 
     // Constructor
-    public Book(String bookId, String title, String author, String genre) {
+    public Book(String bookId, String title, String author, String genre)
+    {
         this.bookId = bookId;
         this.title = title;
         this.author = author;
