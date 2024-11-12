@@ -1,6 +1,7 @@
 package com.librarymanagement;
 
-public class Book {
+public class Book 
+{
     private String bookId;
     private String title;
     private String author;
