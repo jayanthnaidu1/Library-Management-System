@@ -1,0 +1,5 @@
+101,Jayanth,jayanth@example.com,5,4
+102,Rohith,rohith@example.com,1
+103,Karthik,karthik@example.com,3,7
+104,Mahesh,mahesh@gmail.com,2
+105,kumar,kumar@gmail.com
