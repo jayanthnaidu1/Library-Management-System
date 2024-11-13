@@ -1,7 +1,0 @@
-1,Java,jamesgosling,programming,false
-2,lifeofpie,Anglee,Entertainment,false
-3,ramayanam,valmiki,Religious book,false
-4,oop,james,programming,true
-5,secret,null,life,false
-6,python,jayanth,education,true
-7,rohith,yantranet,company,false
