@@ -82,15 +82,13 @@ public class Library
 
     // Saves the current list of books in the library to a file.
     public void saveBooksToFile()
-         //FileWriter to open the file for writing data 
-        //BufferedWritter will make it more efficient for writing large files
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("resources/books.txt"))) 
+         //print writer will be useful to write any type of date
+        try (PrintWriter writer = new PrintWriter("resources/books.txt"))
         {
             for (Book book : books.values()) 
             {
-                writer.write(book.getBookId() + "," + book.getTitle() + "," +
+                writer.println(book.getBookId() + "," + book.getTitle() + "," +
                         book.getAuthor() + "," + book.getGenre() + "," + book.isAvailable());
-                writer.newLine();
             }
         } 
         catch (IOException e) // Try and Catch Block for Exception Handling
@@ -102,18 +100,16 @@ public class Library
     // Saves the current list of members in the library to a file
     public void saveMembersToFile() 
     {
-        //FileWriter to open the file for writing data 
-        //BufferedWritter will make it more efficient for writing large files
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("resources/members.txt")))
+       //print writer will be useful to write any type of date 
+        try (PrintWriter writer = new PrintWriter("resources/members.txt"))
         {
             for (Member member : members.values()) 
             {
-                writer.write(member.getMemberId() + "," + member.getName() + "," + member.getEmail());
+                writer.println(member.getMemberId() + "," + member.getName() + "," + member.getEmail());
                 for (Book book : member.getBorrowedBooks()) 
                 {
-                    writer.write("," + book.getBookId());
+                    writer.println("," + book.getBookId());
                 }
-                writer.newLine();
             }
         } 
         catch (IOException e) // Try and Catch Block for Exception Handling
@@ -126,7 +122,6 @@ public class Library
     public void loadBooksFromFile() 
     {
         //BufferedReader is used to read text from an input file
-       //FileReader is used to open the file for reading
         try (BufferedReader reader = new BufferedReader(new FileReader("resources/books.txt")))
         {
             String line;
@@ -153,7 +148,6 @@ public class Library
     public void loadMembersFromFile() 
     {
         //BufferedReader is used to read text from an input file
-       //FileReader is used to open the file for reading
         try (BufferedReader reader = new BufferedReader(new FileReader("resources/members.txt"))) 
         {
             String line;
